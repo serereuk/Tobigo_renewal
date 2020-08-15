@@ -1,8 +1,9 @@
 from dlgo.agent import naive 
-from dlgo import Goboard_slow as goboard    
+from dlgo import goboard as goboard
 from dlgo import gotypes
 from dlgo.utils import print_board, print_move
 import time
+
 
 def main():
     board_size = 9
@@ -20,5 +21,6 @@ def main():
         print_move(game.next_player, bot_move)
         game = game.apply_move(bot_move)
 
+
 if __name__ == '__main__':
-    main()  
+    main()
